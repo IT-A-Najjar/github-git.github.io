@@ -70,6 +70,7 @@ header .btns a i{
 
 .service-info .head{
     margin-left: 8%;
+    
     padding-top: 40px;
 }
 
@@ -89,16 +90,9 @@ header .btns a i{
     display: flex;
     justify-content: space-between;
     margin-left: 8%;
+    margin-right: 8%;
 
     margin-top: 30px;
-}
-
-.box-one{
-    flex:  1 1 48rem;
-    margin-right: 120px;
-}
-.box-tow{
-    flex:  1 1 454px;
 }
 
 .hidebox{
@@ -178,7 +172,7 @@ header .btns a i{
     height: 116px;
 } 
 .hizmet-5{
-    width:500px;
+    width:max-content;
 }
 
 .hizmet-5 label{
@@ -191,7 +185,6 @@ header .btns a i{
     font-weight: bolder;
     font-size: 16px;
     cursor: pointer;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -481,13 +474,9 @@ footer .footer .box > a:hover{
     cursor: pointer;
 }
 
- 
 @media(max-width:768px){
     footer .footer .box{
         display: block;
-         
-        gap: 20px;
-        padding: 30px;
     }
     .service-info .head h1{
         color: #333;
@@ -500,11 +489,11 @@ footer .footer .box > a:hover{
         font-size: 22px;
     }
     .box-tow .hizmet-5 .boxs {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 7%;
+        display: block;
+
+       
     }
+   
     
     .btns , .f-btn ,.f-btn2{
         display: none;
@@ -512,7 +501,7 @@ footer .footer .box > a:hover{
     .container{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
 
     }
     .service-info .container .f-btn2{
@@ -520,6 +509,10 @@ footer .footer .box > a:hover{
     }
     .card-container{
         display: none;
+    }
+    .footer{
+        flex-direction: column;
+        
     }
     
 }
@@ -529,6 +522,7 @@ footer .footer .box > a:hover{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap-reverse;
+        flex-direction: column;
     }
 
     .service-info .container .f-btn2{
