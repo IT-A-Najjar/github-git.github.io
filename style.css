@@ -89,6 +89,7 @@ header .btns a i{
     display: flex;
     justify-content: space-between;
     margin-left: 8%;
+
     margin-top: 30px;
 }
 
@@ -434,7 +435,7 @@ footer .footer{
 }
 
 footer .footer .box{
-    flex: 1 1 20rem;
+    flex: auto;
 }
 
 footer .footer .box h1{
@@ -480,14 +481,47 @@ footer .footer .box > a:hover{
     cursor: pointer;
 }
 
-
-
-
-
+ 
 @media(max-width:768px){
-    .btns{
+    footer .footer .box{
+        display: block;
+         
+        gap: 20px;
+        padding: 30px;
+    }
+    .service-info .head h1{
+        color: #333;
+        font-size: 32px;
+        padding-bottom: 24px;
+        font-weight: bold;
+    }
+    .service-info .head p{
+        color: #4f4f4f;
+        font-size: 22px;
+    }
+    .box-tow .hizmet-5 .boxs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 7%;
+    }
+    
+    .btns , .f-btn ,.f-btn2{
         display: none;
     }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .service-info .container .f-btn2{
+        display: none;
+    }
+    .card-container{
+        display: none;
+    }
+    
 }
 
 @media(max-width:1230px){
@@ -503,4 +537,9 @@ footer .footer .box > a:hover{
     .card-container{
         display: none;
     }
+    .box-tow .hizmet-5 .boxs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }    
 }
