@@ -190,8 +190,13 @@ header .btns a i{
     align-items: center;
     width: 138px;
     height: 116px;
+    transition: 0.4s;
 } 
-
+.hizmet-5 label:hover{
+    width: 142px;
+    height: 120px;
+    border: 2px solid #4f4f4f ;
+}
 
  .hizmet label span{
     color: #a1af00;
@@ -258,7 +263,10 @@ input[type=radio]:checked + label i {
     align-items: center;
     gap: 20px;
 }
-
+.boxss{
+    display: flex;
+    align-items: center;
+}
 
 .t-info h1{
     font-size: 20px;
